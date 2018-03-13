@@ -1,0 +1,21 @@
+//图片自适应
+@mixin img-responsive{
+  max-width: 100%;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
+//内容居中模块
+@mixin container($cont-width-name:$module-width-value){
+  width: $cont-width-name;
+  margin: $Center-the;
+}
+//浮动元素,清除浮动
+@mixin float($float:left){
+  float: $float;
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
